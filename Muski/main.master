@@ -1,0 +1,106 @@
+﻿<%@ Master Language="C#" %>
+<%@ Import Namespace="System.IO" %>
+
+<!DOCTYPE html>
+
+<!--
+    Copyright (c) 2013 muski. All rights reserved.
+
+    Please read http://www.maxchan.info/license/?terr=cn for our license terms and
+    conditions.
+    -->
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=8" />
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="<%= ResolveUrl("~/images/main.css") %>" />
+    <asp:ContentPlaceHolder ID="cph_head" runat="server" />
+</head>
+<body>
+    <form id="main" runat="server" style="padding: 0px; margin: 0px;">
+        <div id="header" style="padding: 12px 10px 6px;">
+			<div>
+				<table style="width: 100%; border: none;">
+                <tr>
+                    <td style="text-align: left; vertical-align: bottom;">
+                        <a href="<%= ResolveUrl("~/") %>"><img src="<%= ResolveUrl("~/images/muski-logo.png") %>" alt="muski logo" style="height: 80px;" /></a>
+                    </td>
+                    <td style="text-align: right; vertical-align: bottom;">
+						<%= quirkyQuote() %>
+                    </td>
+                </tr>
+            </table>
+			</div>
+        </div>
+        <div id="contents" style="padding: 6px 10px 36px;">
+			<div>
+				<asp:ContentPlaceHolder ID="cph_main" runat="server" />
+			</div>
+        </div>
+        <div id="footer" class="footer">
+			<div>
+				<table style="width: 100%; border: none;">
+                <tr>
+                    <td style="text-align: left; vertical-align: top;">
+                        &copy; <%= string.Format("{0:yyyy}", DateTime.Now) %> muski.
+						<a href="<%= ResolveUrl("~/license/") %>" style="color: white;">All rights reserved.</a> - 
+						<a href="http://blog.maxchan.info/" style="color: white;">Blog</a> - 
+						<a href="<%= ResolveUrl("~/contact/") %>" style="color: white;">Contact</a>
+                    </td>
+                    <td style="text-align: right; vertical-align: top;">
+						<a href="<%= ResolveUrl("~/about/") %>" style="color: white;">About</a> -
+						<a href="<%= ResolveUrl("~/privacy/") %>" style="color: white;">Privacy</a> -
+						<a href="<%= ResolveUrl("~/license/foss.aspx") %>" style="color: white;">Free &amp; Open Source</a> -
+						<a href="<%= ResolveUrl("~/acknowledgement/") %>" style="color: white;">Acknowledgement</a>
+                    </td>
+                </tr>
+            </table>
+			</div>
+        </div>
+		<asp:ScriptManager ID="sm" runat="server" />
+    </form>
+</body>
+</html>
+
+<script runat="server">
+
+	protected List<string> quotes;
+
+	protected string quirkyQuote()
+	{
+		string fileName = Server.MapPath("~/data/quirky.txt");
+
+		if (File.Exists(fileName))
+		{
+			// Load the file. This file won't be big so no cache is needed.
+			if (quotes == null)
+			{
+				StreamReader sr = new StreamReader(fileName);
+				quotes = new List<string>();
+				while (!sr.EndOfStream)
+				{
+					string str = sr.ReadLine().Trim();
+
+					if (str.StartsWith("#"))
+						continue; // Hash comment.
+					if (str.Length <= 0)
+						continue; // Empty line.
+
+					quotes.Add(str);
+				}
+				sr.Close();
+			}
+
+			Random random = new Random();
+			return quotes[random.Next(quotes.Count)];
+			
+		}
+		else
+		{
+			return "muski.";
+		}
+	}
+
+</script>

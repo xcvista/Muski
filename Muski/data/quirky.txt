@@ -1,0 +1,27 @@
+﻿# =====================================
+# quirky.txt
+# -------------------------------------
+# A list of quirky quotes that will be displayed randomly on the page.
+# One quote each line.
+# All beginning and trailling blanks are ignored, as well as blank lines.
+# HTML allowed. Mind the HTML5 standard.
+# Lines beginning with a hash (#) are comments.
+# =====================================
+
+muski.
+senatus populusque muskinus.
+turn off lamp, turn on lapm.
+i don't do sites well.
+i can't draw anything except schmetics.
+i am both closed and open.
+i misspell and mistype my name.
+press command-r to see next quote.
+no ie, please.
+you should embrace linux.
+objective-c is way better than csharp.
+actually i am a basic person, if using asp.net.
+do you use app store?
+i prefer windows server to windows.
+i like unix more than windows.
+pinvoke kills everything.
+i need a girlfriend.
