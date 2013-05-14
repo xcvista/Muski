@@ -59,6 +59,7 @@
 		<div id="footer" class="footer">
 			<div>
 				<div style="text-align: right; vertical-align: top; float: right; margin: 6px;">
+					<a href="https://github.com/xcvista/Muski" style="color: white;">Version <%= Application["gitVersion"] %></a> -
 					<a href="http://validator.w3.org/check/referer" style="color: white;">HTML 5</a> -
 							<a href="http://jigsaw.w3.org/css-validator/check/referer" style="color: white;">CSS 3</a> - 
 							<a href="<%= ResolveUrl("~/about.aspx") %>" style="color: white;">About</a> -
