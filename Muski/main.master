@@ -1,5 +1,6 @@
 ﻿<%@ Master Language="C#" %>
 <%@ Import Namespace="System.IO" %>
+<%@ Import Namespace="System.Collections.Generic" %>
 
 <!DOCTYPE html>
 
