@@ -23,6 +23,17 @@
 	<p>
 		More technical information:
 		<pre><%= ex.StackTrace %></pre>
+		<%
+			Exception sub = ex.InnerException;
+			while (sub != null)
+			{
+		%>
+		<pre>[<%= sub.GetType().FullName %>] <%= sub.Message %></pre>
+		<pre><%= sub.StackTrace %></pre>
+		<% 
+				sub = sub.InnerException;
+			} 
+		%>
 	</p>
 	<%
 		}
