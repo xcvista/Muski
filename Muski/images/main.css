@@ -64,4 +64,9 @@ pre {
 	font-size: 15px;
 	background-color: #ccc;
 	padding: 6px;
+	max-width: 100% !important;
+}
+
+img {
+	border: none;
 }
