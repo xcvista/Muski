@@ -26,6 +26,8 @@
 			}
 			foreach (FileInfo fi in di.GetFiles())
 			{
+				if (fi.Name == "default.aspx")
+					continue;
 		%>
 		<li><a href="<%= fi.Name %>"><%= fi.Name %></a></li>
 		<%
