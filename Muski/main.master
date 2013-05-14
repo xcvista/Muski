@@ -48,13 +48,13 @@
                         &copy; <%= string.Format("{0:yyyy}", DateTime.Now) %> muski.
 						<a href="<%= ResolveUrl("~/license/") %>" style="color: white;">All rights reserved.</a> - 
 						<a href="http://blog.maxchan.info/" style="color: white;">Blog</a> - 
-						<a href="<%= ResolveUrl("~/contact/") %>" style="color: white;">Contact</a>
+						<a href="<%= ResolveUrl("~/contact.aspx") %>" style="color: white;">Contact</a>
                     </td>
                     <td style="text-align: right; vertical-align: top;">
-						<a href="<%= ResolveUrl("~/about/") %>" style="color: white;">About</a> -
-						<a href="<%= ResolveUrl("~/privacy/") %>" style="color: white;">Privacy</a> -
+						<a href="<%= ResolveUrl("~/about.aspx") %>" style="color: white;">About</a> -
+						<a href="<%= ResolveUrl("~/privacy.aspx") %>" style="color: white;">Privacy</a> -
 						<a href="<%= ResolveUrl("~/license/foss.aspx") %>" style="color: white;">Free &amp; Open Source</a> -
-						<a href="<%= ResolveUrl("~/acknowledgement/") %>" style="color: white;">Acknowledgement</a>
+						<a href="<%= ResolveUrl("~/acknowledgement.aspx") %>" style="color: white;">Acknowledgement</a>
                     </td>
                 </tr>
             </table>
