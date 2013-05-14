@@ -15,7 +15,6 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=8" />
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="<%= ResolveUrl("~/images/main.css") %>" />
 	<asp:ContentPlaceHolder ID="cph_head" runat="server" />
@@ -60,7 +59,6 @@
 				</table>
 			</div>
 		</div>
-		<asp:ScriptManager ID="sm" runat="server" />
 	</form>
 </body>
 </html>
