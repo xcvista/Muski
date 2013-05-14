@@ -57,22 +57,20 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="about.aspx" />
+    <Content Include="contact.aspx" />
     <Content Include="data\quirky.txt" />
     <Content Include="default.aspx" />
+    <Content Include="error.aspx" />
+    <Content Include="Global.asax" />
     <Content Include="license\default.aspx" />
     <Content Include="license\foss.aspx" />
     <Content Include="images\main.css" />
     <Content Include="images\muski-logo.png" />
+    <Content Include="share\default.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="license\default.aspx.cs">
-      <DependentUpon>default.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="license\default.aspx.designer.cs">
-      <DependentUpon>default.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
