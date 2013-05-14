@@ -61,7 +61,6 @@
 				</table>
 			</div>
 		</div>
-		<asp:ScriptManager ID="sm" runat="server" />
 	</form>
 </body>
 </html>
