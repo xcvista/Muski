@@ -58,3 +58,10 @@ blockquote {
 	clear: both;
 	margin-top: 6px;
 }
+
+pre {
+	font-family: 'Ubuntu Mono', Monaco, Consolas, monospace;
+	font-size: 15px;
+	background-color: #ccc;
+	padding: 6px;
+}

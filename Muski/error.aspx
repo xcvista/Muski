@@ -17,16 +17,12 @@
 		{
 	%>
 	<p>
-		Here is what went wrong:
-		<pre>
-			<%= ex.Message %>
-		</pre>
+		Here is what went wrong (<%= ex.GetType().FullName %>):
+		<pre><%= ex.Message %></pre>
 	</p>
 	<p>
 		More technical information:
-		<pre>
-			<%= ex.StackTrace %>
-		</pre>
+		<pre><%= ex.StackTrace %></pre>
 	</p>
 	<%
 		}
