@@ -16,7 +16,7 @@
 			start.RedirectStandardOutput = true;
 			start.UseShellExecute = true;
 			start.Arguments = "log -1 --format=\"%h\"";
-			start.FileName = "git";
+			start.FileName = "/usr/bin/git";
 
 			Process process = new Process();
 			process.StartInfo = start;
