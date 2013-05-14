@@ -53,8 +53,7 @@
                     <td style="text-align: right; vertical-align: top;">
 						<a href="<%= ResolveUrl("~/about.aspx") %>" style="color: white;">About</a> -
 						<a href="<%= ResolveUrl("~/privacy.aspx") %>" style="color: white;">Privacy</a> -
-						<a href="<%= ResolveUrl("~/license/foss.aspx") %>" style="color: white;">Free &amp; Open Source</a> -
-						<a href="<%= ResolveUrl("~/acknowledgement.aspx") %>" style="color: white;">Acknowledgement</a>
+						<a href="<%= ResolveUrl("~/license/foss.aspx") %>" style="color: white;">Free &amp; Open Source</a>
                     </td>
                 </tr>
             </table>
