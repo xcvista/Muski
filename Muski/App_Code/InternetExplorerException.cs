@@ -7,5 +7,9 @@ namespace Muski.App_Code
 {
 	public class InternetExplorerException : Exception
 	{
+		public InternetExplorerException(string message) : base(message)
+		{
+			
+		}
 	}
 }
