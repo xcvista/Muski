@@ -25,8 +25,8 @@
 	<form id="main" runat="server" style="padding: 0px; margin: 0px;">
 		<div id="header" style="padding: 12px 10px 6px;">
 			<div style="text-align: right; float: right;">
-					<%= quirkyQuote() %>
-				</div>
+				<%= quirkyQuote() %>
+			</div>
 			<div>
 				<a href="<%= ResolveUrl("~/") %>">
 					<img src="<%= ResolveUrl("~/images/muski-logo.png") %>" alt="muski logo" style="height: 80px;" />
@@ -56,7 +56,7 @@
 				<asp:ContentPlaceHolder ID="cph_main" runat="server" />
 			</div>
 		</div>
-		
+
 		<div id="footer" class="footer">
 			<div>
 				<div style="text-align: right; vertical-align: top; float: right; margin: 6px;">
@@ -71,7 +71,13 @@
 					&copy; <%= string.Format("{0:yyyy}", DateTime.Now) %> muski.
 						<a href="<%= ResolveUrl("~/license/") %>" style="color: white;">All rights reserved.</a> - 
 						<a href="http://blog.maxchan.info/" style="color: white;">Blog</a> - 
-						<a href="<%= ResolveUrl("~/contact.aspx") %>" style="color: white;">Contact</a>
+						<a href="<%= ResolveUrl("~/contact.aspx") %>" style="color: white;">Contact</a> -
+					<script type="text/javascript" src="http://js.users.51.la/15826609.js"></script>
+					<noscript>
+	<a href="http://www.51.la/?15826609" target="_blank">
+		<img alt="&#x6211;&#x8981;&#x5566;&#x514D;&#x8D39;&#x7EDF;&#x8BA1;" src="http://img.users.51.la/15826609.asp" style="border:none" />
+	</a>
+</noscript>
 				</div>
 			</div>
 		</div>
