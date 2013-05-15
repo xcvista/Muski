@@ -10,6 +10,7 @@
 		try
 		{
 			string buffer = "";
+			string err = "";
 			
 			ProcessStartInfo start = new ProcessStartInfo();
 			start.CreateNoWindow = true;
@@ -26,13 +27,18 @@
 				{
 					buffer += e2.Data;
 				});
+			process.ErrorDataReceived += new DataReceivedEventHandler(
+				delegate(object sender2, DataReceivedEventArgs e2)
+				{
+					err += e2.Data;
+				});
 
 			process.Start();
 			process.BeginOutputReadLine();
 			process.WaitForExit();
 			process.CancelOutputRead();
 
-			Application["gitVersion"] = buffer;
+			Application["gitVersion"] = string.Format("{1} ({2})", buffer, err);
 		}
 		catch (Exception ex)
 		{
