@@ -17,8 +17,8 @@
 			start.RedirectStandardOutput = true;
 			start.RedirectStandardError = true;
 			start.UseShellExecute = false;
-			start.Arguments = "log -1 --format=\"%h\"";
-			start.FileName = "git";
+			start.Arguments = string.Format("get-version.sh {0}", Server.MapPath("~/"));
+			start.FileName = "bash";
 
 			Process process = new Process();
 			process.StartInfo = start;
