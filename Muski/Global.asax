@@ -15,6 +15,7 @@
 			ProcessStartInfo start = new ProcessStartInfo();
 			start.CreateNoWindow = true;
 			start.RedirectStandardOutput = true;
+			start.RedirectStandardError = true;
 			start.UseShellExecute = false;
 			start.Arguments = "log -1 --format=\"%h\"";
 			start.FileName = "git";
@@ -35,8 +36,10 @@
 
 			process.Start();
 			process.BeginOutputReadLine();
+			process.BeginErrorReadLine();
 			process.WaitForExit();
 			process.CancelOutputRead();
+			process.CancelErrorRead();
 
 			Application["gitVersion"] = string.Format("{1} ({2})", buffer, err);
 		}
