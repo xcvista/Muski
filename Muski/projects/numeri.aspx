@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="numeri - muski" Language="C#" MasterPageFile="~/main.master" AutoEventWireup="true" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="cph_head" runat="server">
 	<%
-	string ua = Request.UserAgent
+	string ua = Request.UserAgent;
 	if (ua.Contains("iPhone") || ua.Contains("iPad"))
 	{
 	%>
