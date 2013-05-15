@@ -45,7 +45,7 @@
 		}
 		catch (Exception ex)
 		{
-			Application["gitVersion"] = "Unknown"; // String.Format("Unknown ([{0}] {1}<pre>{2}</pre>)<br />", ex.GetType().FullName, ex.Message, ex.StackTrace);
+			Application["gitVersion"] = String.Format("Unknown ([{0}] {1}<pre>{2}</pre>)<br />", ex.GetType().FullName, ex.Message, ex.StackTrace);
 		}
 		
 	}
