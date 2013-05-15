@@ -67,6 +67,7 @@
     <Content Include="license\foss.aspx" />
     <Content Include="images\main.css" />
     <Content Include="images\muski-logo.png" />
+    <Content Include="privacy.aspx" />
     <Content Include="quotes.aspx" />
     <Content Include="share\default.aspx" />
     <Content Include="Web.config" />
@@ -78,6 +79,7 @@
   <ItemGroup>
     <Content Include="main.master" />
     <Content Include="api\apiVersion.ashx" />
+    <Content Include="get-version.sh" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

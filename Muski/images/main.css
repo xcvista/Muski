@@ -56,3 +56,9 @@ p {
 	margin-top: 0.5em;
 	margin-bottom: 0.5em;
 }
+
+hr {
+	border: none;
+	height: 2px;
+	background-color: #999;
+}

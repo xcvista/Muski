@@ -18,14 +18,14 @@
 }
 
 .menu {
-	padding: 6px 10px 6px 6px; 
-	margin-left: 6px; 
-	margin-bottom: 36px; 
-	float: right; 
+	padding: 6px 6px 6px 10px; 
+	margin-left: 0px; 
+	margin-bottom: 60px; 
+	float: left; 
 	background-color: #ccc; 
 	width: 300px; 
-	border-style: none none none solid; 
-	border-width: 0px 0px 0px 3px; 
+	border-style: none solid none none; 
+	border-width: 0px 3px 0px 0px; 
 	border-color: #333; 
 	font-size: 13px;
 }

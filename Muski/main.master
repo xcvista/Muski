@@ -23,13 +23,11 @@
 </head>
 <body>
 	<form id="main" runat="server" style="padding: 0px; margin: 0px;">
-		<div id="header" style="padding: 12px 10px 6px;">
-			<div style="text-align: right; float: right;">
-				<%= quirkyQuote() %>
-			</div>
-			<div>
+		<div id="header" style="padding: 12px 10px 6px; clear: both;">
+			<div style="">
 				<a href="<%= ResolveUrl("~/") %>">
-					<img src="<%= ResolveUrl("~/images/muski-logo.png") %>" alt="muski logo" style="height: 80px;" />
+					<img src="<%= ResolveUrl("~/images/muski-logo.png") %>" 
+						alt="muski logo" style="height: 80px;" />
 				</a>
 			</div>
 		</div>
@@ -50,8 +48,12 @@
 				<li><a href="<%= ResolveUrl("~/license/foss.aspx") %>">Free &amp; Open Source</a></li>
 				<li><a href="<%= ResolveUrl("~/privacy.aspx") %>">Privacy</a></li>
 			</ul>
+			<hr />
+			<div style="text-align: right;">
+				<%= quirkyQuote() %>
+			</div>
 		</div>
-		<div id="contents" style="padding: 6px 330px 36px 10px;">
+		<div id="contents" style="padding: 6px 10px 60px 330px;">
 			<div style="text-align: justify;">
 				<asp:ContentPlaceHolder ID="cph_main" runat="server" />
 			</div>
