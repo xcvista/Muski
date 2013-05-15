@@ -37,7 +37,12 @@
 				<li><a href="<%= ResolveUrl("~/") %>">Home</a></li>
 			</ul>
 			<ul>
-				<li>...</li>
+				<li>
+					Projects
+					<ul>
+						<li><a href="<%= ResolveUrl("~/projects/numeri.aspx") %>">numeri</a></li>
+					</ul>
+				</li>
 				<li><a href="<%= ResolveUrl("~/quotes.aspx") %>">Quotes</a></li>
 				<li><a href="<%= ResolveUrl("~/share/") %>">Share folder</a></li>
 			</ul>
