@@ -1,5 +1,4 @@
 ﻿<%@ WebHandler Language="C#" Class="Muski.api.Version" %>
-<%@ Assembly Name="Newtonsoft.Json" %>
 
 using System;
 using System.Collections.Generic;
@@ -9,7 +8,9 @@ using Newtonsoft.Json;
 namespace Muski.api
 {	
 	/// <summary>
-	/// version 的摘要说明
+	/// @interface MSAPI (APIVersion)
+	/// - (NSString *)apiVersion;
+	/// @end
 	/// </summary>
 	public class Version : IHttpHandler
 	{
