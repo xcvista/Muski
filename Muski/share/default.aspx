@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/main.master" %>
+﻿<%@ Page Title="Share Folder - muski" Language="C#" MasterPageFile="~/main.master" %>
 
 <%@ Import Namespace="System.IO" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="cph_head" runat="server">
