@@ -12,8 +12,9 @@
 [Rr]elease/
 x64/
 build/
-[Bb]in/
+# [Bb]in/ This is now used.
 [Oo]bj/
+sbin/
 
 # MSTest test Results
 [Tt]est[Rr]esult*/
