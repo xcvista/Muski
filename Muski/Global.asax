@@ -41,11 +41,11 @@
 			process.CancelOutputRead();
 			process.CancelErrorRead();
 
-			Application["gitVersion"] = (err.Length <= 0) ? buffer : string.Format("{0} ({1})", buffer, err);
+			Application["gitVersion"] = buffer; // (err.Length <= 0) ? buffer : string.Format("{0} ({1})", buffer, err);
 		}
 		catch (Exception ex)
 		{
-			Application["gitVersion"] = String.Format("Unknown ([{0}] {1}<pre>{2}</pre>)<br />", ex.GetType().FullName, ex.Message, ex.StackTrace);
+			Application["gitVersion"] = "Unknown"; // String.Format("Unknown ([{0}] {1}<pre>{2}</pre>)<br />", ex.GetType().FullName, ex.Message, ex.StackTrace);
 		}
 		
 	}
