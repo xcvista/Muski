@@ -14,9 +14,9 @@
 			ProcessStartInfo start = new ProcessStartInfo();
 			start.CreateNoWindow = true;
 			start.RedirectStandardOutput = true;
-			start.UseShellExecute = true;
+			start.UseShellExecute = false;
 			start.Arguments = "log -1 --format=\"%h\"";
-			start.FileName = "/usr/bin/git";
+			start.FileName = "git";
 
 			Process process = new Process();
 			process.StartInfo = start;
@@ -34,9 +34,9 @@
 
 			Application["gitVersion"] = buffer;
 		}
-		catch
+		catch (Exception ex)
 		{
-			Application["gitVersion"] = "Unknown";
+			Application["gitVersion"] = "Unknown"; // String.Format("Unknown ([{0}] {1}<pre>{2}</pre>)<br />", ex.GetType().FullName, ex.Message, ex.StackTrace);
 		}
 		
 	}
