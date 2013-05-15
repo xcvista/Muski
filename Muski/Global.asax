@@ -17,7 +17,7 @@
 			start.RedirectStandardOutput = true;
 			start.RedirectStandardError = true;
 			start.UseShellExecute = false;
-			start.Arguments = string.Format("{0} {1}", Server.MapPath("~/get-version.sh") Server.MapPath("~/"));
+			start.Arguments = string.Format("{0} {1}", Server.MapPath("~/get-version.sh"), Server.MapPath("~/"));
 			start.FileName = "bash";
 
 			Process process = new Process();
