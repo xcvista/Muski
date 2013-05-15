@@ -51,7 +51,7 @@
 				<li><a href="<%= ResolveUrl("~/privacy.aspx") %>">Privacy</a></li>
 			</ul>
 		</div>
-		<div id="contents" style="padding: 6px 6px 36px 10px;">
+		<div id="contents" style="padding: 6px 330px 36px 10px;">
 			<div style="text-align: justify;">
 				<asp:ContentPlaceHolder ID="cph_main" runat="server" />
 			</div>
