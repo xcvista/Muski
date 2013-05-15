@@ -1,5 +1,6 @@
 ﻿<%@ Page Title="numeri - muski" Language="C#" MasterPageFile="~/main.master" AutoEventWireup="true" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="cph_head" runat="server">
+	<meta name="apple-itunes-app" content="app-id=646849260" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="cph_main" runat="server">
 	<div class="bracer">
