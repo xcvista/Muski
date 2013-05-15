@@ -41,7 +41,7 @@
 			process.CancelOutputRead();
 			process.CancelErrorRead();
 
-			Application["gitVersion"] = string.Format("{1} ({2})", buffer, err);
+			Application["gitVersion"] = (err.Length <= 0) ? buffer : string.Format("{0} ({1})", buffer, err);
 		}
 		catch (Exception ex)
 		{
