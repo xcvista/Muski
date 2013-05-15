@@ -18,6 +18,7 @@
 	<meta charset="utf-8" />
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="<%= ResolveUrl("~/images/main.css") %>" />
+	<link rel="stylesheet" type="text/css" href="<%= ResolveUrl("~/images/solo.css") %>" />
 	<asp:ContentPlaceHolder ID="cph_head" runat="server" />
 </head>
 <body>
@@ -32,7 +33,7 @@
 				</a>
 			</div>
 		</div>
-		<div id="menu" style="padding: 6px 10px 6px 6px; margin-left: 6px; margin-bottom: 36px; float: right; background-color: #ccc; width: 300px; border-style: none none none solid; border-width: 0px 0px 0px 3px; border-color: #333; font-size: 13px;">
+		<div id="menu" class="menu">
 			<h4>Navigation</h4>
 			<ul>
 				<li><a href="<%= ResolveUrl("~/") %>">Home</a></li>
@@ -119,11 +120,11 @@
 
 	protected void Page_Load(object sender, EventArgs e)
 	{
-		if (!Request.FilePath.EndsWith("error.aspx"))
+		if (!(Request.FilePath.EndsWith("error.aspx") || Request.FilePath.EndsWith("ie.aspx")))
 		{
 			// Not gonna bug the error page, as it is used in No-IE.
 			if (Request.UserAgent.Contains("MSIE"))
-				throw new InternetExplorerException("Internet Explorer is not supported on this website.");
+				Response.Redirect(ResolveUrl("~/ie.aspx"));
 		}
 	}
 </script>

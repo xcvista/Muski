@@ -1,0 +1,32 @@
+﻿.footer {
+	/* Padding */
+	padding: 6px 10px 12px;
+	height: 30px; 
+	
+	/* Reset typography */
+	color: white; 
+	font-size: 13px;
+	background-color: #333; 
+	
+	/* Floating */
+	position: fixed;
+	bottom: 0px; 
+	left: 0px; 
+	right: 0px; 
+	clear: both;
+	margin-top: 6px;
+}
+
+.menu {
+	padding: 6px 10px 6px 6px; 
+	margin-left: 6px; 
+	margin-bottom: 36px; 
+	float: right; 
+	background-color: #ccc; 
+	width: 300px; 
+	border-style: none none none solid; 
+	border-width: 0px 0px 0px 3px; 
+	border-color: #333; 
+	font-size: 13px;
+}
+

@@ -63,10 +63,13 @@
     <Content Include="default.aspx" />
     <Content Include="error.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="ie.aspx" />
+    <Content Include="images\solo.css" />
     <Content Include="license\default.aspx" />
     <Content Include="license\foss.aspx" />
     <Content Include="images\main.css" />
     <Content Include="images\muski-logo.png" />
+    <Content Include="quotes.aspx" />
     <Content Include="share\default.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
