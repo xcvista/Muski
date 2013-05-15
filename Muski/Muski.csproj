@@ -72,14 +72,12 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Code\InternetExplorerException.cs" />
+    <Compile Include="App_Code\InternetExplorerException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="main.master" />
     <Content Include="api\apiVersion.ashx" />
-    <Content Include="api\error.ashx" />
-    <Content Include="api\Web.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
