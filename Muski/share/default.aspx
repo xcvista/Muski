@@ -20,13 +20,15 @@
 
 			foreach (DirectoryInfo subdi in di.GetDirectories())
 			{
+				if (subdi.Name[0] == '.') // Get rid of subdir temps.
+					continue;
 		%>
 		<li><a href="<%= subdi.Name %>/"><%= subdi.Name %>/</a></li>
 		<%
 			}
 			foreach (FileInfo fi in di.GetFiles())
 			{
-				if (fi.Name == "default.aspx")
+				if (fi.Name == "default.aspx" || fi.Name[0] == '.') // I need to get rid of temps too.
 					continue;
 		%>
 		<li><a href="<%= fi.Name %>"><%= fi.Name %></a></li>
